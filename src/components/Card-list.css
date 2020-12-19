@@ -1,0 +1,22 @@
+.CardList {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.CardList::-webkit-scrollbar {
+  width: 0.7em;
+  background: white;
+}
+.CardList::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 30px;
+  height: 30px;
+}
+
+.CardList::-webkit-scrollbar-track-piece {
+  display: none;
+}

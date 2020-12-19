@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  /* background-color: whitesmoke; */
+  height: 90vh;
+  width: 90vh;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 150px 1fr 50px;
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  border-bottom: 1px solid #eaeaea;
+}
+.name {
+  font-size: 28px;
+  font-weight: 700;
+}
+.details > :not(:first-child) {
+  margin: 5px 15px;
+}
+.average-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.search-center {
+  text-align: center;
+  padding: 0 10px;
+}
+.add-tag {
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  margin: 5px;
+  outline: none;
+  margin-top: 20px;
+}
+.tag-conatiner {
+  display: flex;
+  justify-content: center;
+}
+.add-tag:focus {
+  border-bottom: 1px solid black;
+}
+.buttonHolder {
+  position: absolute;
+  right: 15px;
+  padding-top: 15px;
+}
+
+.buttonHolder button {
+  background: none;
+  border: none;
+  color: darkgrey;
+  font-size: 40px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.7s ease-in-out;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid #eaeaea;
+  margin: 15px;
+}
+
+.avatar-container {
+  grid-column: 1/2;
+}
+
+.tag {
+  color: #000;
+  float: left;
+  background-color: #dcdcdc;
+  border-radius: 7px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+}
+.search {
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #eaeaea;
+  margin: 10px 0px;
+  margin-bottom: 5px;
+}
+.search::placeholder {
+  font-family: "Raleway", sans-serif;
+}
+.search:focus {
+  border-bottom: 1px solid black;
+}
